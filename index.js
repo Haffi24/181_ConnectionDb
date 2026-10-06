@@ -22,6 +22,9 @@ const pool = new Pool({
     port: 5432,
 })
 
+app.get('/', (req, res, next) => {
+    console.log("TEST DATA : ");
+})
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
